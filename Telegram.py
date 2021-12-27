@@ -1,4 +1,5 @@
 import requests
+import time
 def telegram_bot_sendtext(bot_message):
    
     bot_token = '2128421945:AAHz-s9UwmnCoXP4zbcQjTUm5KSS0EtHzl8'
@@ -7,4 +8,7 @@ def telegram_bot_sendtext(bot_message):
    
     response = requests.get(send_text)
     return response.json()
-telegram_bot_sendtext("Hello Good Mornining!")
+
+while(True):
+     telegram_bot_sendtext("Hello Good Night!")
+     time.sleep(24*60*60)
