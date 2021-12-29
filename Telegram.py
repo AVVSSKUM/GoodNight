@@ -10,5 +10,5 @@ def telegram_bot_sendtext(bot_message):
     return response.json()
 
 while(True):
-     telegram_bot_sendtext("Hello Good Night!")
-     time.sleep(24*60*60)
+     telegram_bot_sendtext("Hello How are you,what are you doing!")
+     time.sleep(60*60)
